@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="my" data-lang="my">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Going Forward Premium | Premium apps at friendly prices</title>
+<meta name="description" content="CapCut Pro, ChatGPT Plus, Canva, Netflix and more. Order on our Telegram bot and pay with KBZPay, Wave Pay or AYA Pay.">
+<meta property="og:title" content="Going Forward Premium">
+<meta property="og:description" content="Premium apps at friendly prices. Order on Telegram, pay with KBZPay, Wave Pay or AYA Pay.">
+<meta property="og:type" content="website">
+<link rel="icon" href="logos/going-forward-premium.jpeg">
+<link rel="apple-touch-icon" href="logos/going-forward-premium.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Palette taken from the Going Forward Premium logo:
+   orange tail #EAA023, lime #95BB26, arrow green #31A435, wordmark green #2C6539 */
+:root{
+  --orange:#EAA023; --orange-hover:#F2B444; --lime:#95BB26; --green:#31A435; --forest:#2C6539;
+  --ground:#F3F5EE; --paper:#FFFFFF; --ink:#17251C; --muted:#56665A; --line:#D7DFD0;
+  --chip:#E6ECDF; --chip-on:#2C6539; --chip-on-ink:#FFFFFF;
+  --link:#2C6539; --tag-bg:#EDF4DA; --tag-ink:#46600F;
+  --promo-bg:#FDEBD0; --promo-ink:#8A4B08;
+  --hero:#1E4A2A; --hero-ink:#F3F5EE; --hero-muted:#B9CDB8; --hero-line:rgba(243,245,238,.3);
+  --chat:#E3EAD9; --bot:#FFFFFF; --me:#D6EDBF; --key:rgba(44,101,57,.11); --key-ink:#1E4A2A;
+  --chat-ink:#17251C; --chat-muted:#5B6B5E; --chat-line:#D2DBC9;
+  --grad:linear-gradient(100deg,#EAA023 0%,#95BB26 52%,#31A435 100%);
+  --font:"Outfit","Noto Sans Myanmar","Myanmar Text","Pyidaungsu",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#0E1711; --paper:#15211A; --ink:#E4ECE1; --muted:#9BAE9E; --line:#28392D;
+    --chip:#1C2B21; --chip-on:#95BB26; --chip-on-ink:#10200F;
+    --link:#A3D6A1; --tag-bg:#243418; --tag-ink:#C6E27F;
+    --promo-bg:#3A2A10; --promo-ink:#F0C078;
+    --hero:#12291A; --hero-ink:#EAF1E6; --hero-muted:#9DB7A1; --hero-line:rgba(234,241,230,.24);
+    --chat:#0C1811; --bot:#1C2C22; --me:#2A482D; --key:rgba(149,187,38,.15); --key-ink:#D5E9B4;
+    --chat-ink:#E4ECE1; --chat-muted:#9BAE9E; --chat-line:#26372B;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0E1711; --paper:#15211A; --ink:#E4ECE1; --muted:#9BAE9E; --line:#28392D;
+  --chip:#1C2B21; --chip-on:#95BB26; --chip-on-ink:#10200F;
+  --link:#A3D6A1; --tag-bg:#243418; --tag-ink:#C6E27F;
+  --promo-bg:#3A2A10; --promo-ink:#F0C078;
+  --hero:#12291A; --hero-ink:#EAF1E6; --hero-muted:#9DB7A1; --hero-line:rgba(234,241,230,.24);
+  --chat:#0C1811; --bot:#1C2C22; --me:#2A482D; --key:rgba(149,187,38,.15); --key-ink:#D5E9B4;
+  --chat-ink:#E4ECE1; --chat-muted:#9BAE9E; --chat-line:#26372B;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{background:var(--ground);scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+html[data-lang="my"] body{line-height:1.85}
+html[data-lang="my"] .en, html[data-lang="en"] .my{display:none!important}
+img,svg{max-width:100%}
+a{color:var(--link)}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- header ---------- */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:14px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:600;font-size:1.05rem;letter-spacing:-.01em;line-height:1.2;min-width:0}
+.brand svg{width:36px;height:36px;flex:none}
+.top-right{display:flex;align-items:center;gap:10px;flex:none}
+.lang{display:inline-flex;background:var(--chip);border-radius:999px;padding:3px}
+.lang button{border:0;background:transparent;color:var(--muted);font:inherit;font-size:.85rem;font-weight:600;padding:4px 12px;border-radius:999px;cursor:pointer;line-height:1.5}
+.lang button[aria-pressed="true"]{background:var(--paper);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.1)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font:inherit;font-weight:600;text-decoration:none;border-radius:12px;padding:12px 20px;line-height:1.35;cursor:pointer;border:1.5px solid transparent;text-align:center}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-go{background:var(--orange);color:#1D2410}
+.btn-go:hover{background:var(--orange-hover)}
+.btn-ghost{border-color:var(--hero-line);color:var(--hero-ink)}
+.btn-ghost:hover{border-color:var(--hero-ink)}
+.top .btn{padding:8px 14px;font-size:.92rem}
+
+/* ---------- hero ---------- */
+.hero{background:var(--hero);color:var(--hero-ink)}
+.hero::before{content:"";display:block;height:5px;background:var(--grad)}
+.hero-in{display:grid;gap:44px;padding-block:48px 56px;align-items:center}
+.hero h1{font-weight:700;font-size:clamp(2.1rem,5.4vw,3.6rem);line-height:1.06;letter-spacing:-.028em;margin:0 0 20px;max-width:13ch}
+html[data-lang="my"] .hero h1{font-size:clamp(1.8rem,4.3vw,2.8rem);line-height:1.6;letter-spacing:0;max-width:18em}
+.lede{font-size:1.1rem;color:var(--hero-muted);max-width:50ch;margin:0 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.paynote{margin:20px 0 0;font-size:.92rem;color:var(--hero-muted)}
+
+/* the bot conversation */
+figure.demo{margin:0;width:100%;max-width:400px;justify-self:center}
+.chat{background:var(--chat);color:var(--chat-ink);border-radius:24px;overflow:hidden;box-shadow:0 30px 60px -28px rgba(0,0,0,.6)}
+.chat-head{display:flex;align-items:center;gap:10px;padding:12px 16px;background:var(--bot);border-bottom:1px solid var(--chat-line)}
+.chat-head svg{width:34px;height:34px;flex:none}
+.chat-head b{display:block;font-size:.95rem;line-height:1.3;font-weight:600}
+.chat-head small{color:var(--chat-muted);font-size:.78rem;line-height:1.3}
+.msgs{display:flex;flex-direction:column;gap:8px;padding:16px 14px 18px;font-size:.9rem;line-height:1.75}
+.m{max-width:86%;padding:8px 12px;border-radius:16px;opacity:0;transform:translateY(8px);animation:pop .45s ease-out forwards;animation-delay:calc(var(--i) * .75s + .3s)}
+.m.bot{background:var(--bot);align-self:flex-start;border-bottom-left-radius:6px}
+.m.me{background:var(--me);align-self:flex-end;border-bottom-right-radius:6px}
+.keys{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:8px}
+.keys span{background:var(--key);color:var(--key-ink);text-align:center;border-radius:8px;padding:4px 6px;font-size:.82rem;font-weight:600}
+.slip{display:flex;align-items:center;gap:10px}
+.slip svg{width:30px;height:38px;flex:none}
+@keyframes pop{to{opacity:1;transform:none}}
+figcaption{font-size:.85rem;color:var(--hero-muted);text-align:center;margin-top:12px}
+
+/* ---------- sections ---------- */
+.block{padding-block:64px}
+.band{background:var(--paper)}
+.block h2{font-size:clamp(1.65rem,3.3vw,2.3rem);font-weight:700;letter-spacing:-.02em;line-height:1.2;margin:0 0 10px}
+html[data-lang="my"] .block h2{line-height:1.65;letter-spacing:0}
+.sub{color:var(--muted);margin:0 0 26px;max-width:60ch}
+
+/* price list */
+.filters{display:flex;gap:8px;overflow-x:auto;margin:0 -20px 18px;padding:0 20px 6px;scrollbar-width:none}
+.filters::-webkit-scrollbar{display:none}
+.filters button{flex:none;border:0;background:var(--chip);color:var(--ink);font:inherit;font-size:.92rem;font-weight:500;padding:7px 16px;border-radius:999px;cursor:pointer;line-height:1.5}
+.filters button[aria-pressed="true"]{background:var(--chip-on);color:var(--chip-on-ink)}
+.board{display:grid;grid-template-columns:1fr;column-gap:48px}
+.item{border-top:1px solid var(--line);padding:18px 0 22px}
+.item-h{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.item-logo{width:40px;height:40px;border-radius:10px;object-fit:contain;flex:none;background:#fff;border:1px solid var(--line);padding:3px}
+.item-logo.letter{display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--forest);font-size:1.05rem}
+.item-t{min-width:0;flex:1}
+.item h3{margin:0;font-size:1.18rem;font-weight:600;letter-spacing:-.01em;line-height:1.3}
+.cat{font-size:.8rem;color:var(--muted);display:block;line-height:1.4}
+.tag{display:inline-block;background:var(--tag-bg);color:var(--tag-ink);font-size:.8rem;font-weight:600;border-radius:6px;padding:0 8px;margin:0 0 8px}
+.plans{width:100%;border-collapse:collapse;font-size:.96rem}
+.plans td{padding:5px 0;border-bottom:1px dashed var(--line);vertical-align:baseline}
+.plans tr:last-child td{border-bottom:0}
+.plans .ty{color:var(--muted);font-size:.88rem;padding-right:12px}
+.plans .pr{text-align:right;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.was{color:var(--muted);font-weight:400;text-decoration:line-through;font-size:.85em;margin-right:6px}
+.promo-chip{display:inline-block;background:var(--promo-bg);color:var(--promo-ink);font-size:.72rem;font-weight:700;border-radius:5px;padding:0 6px;margin-left:6px;vertical-align:1px}
+.after{margin-top:30px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px}
+.after p{margin:0;color:var(--muted);font-size:.95rem}
+.state{color:var(--muted);font-size:.9rem;padding:26px 0;border-top:1px solid var(--line)}
+.stamp{color:var(--muted);font-size:.82rem;margin:14px 0 0}
+
+/* how to order */
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:22px;counter-reset:s}
+.steps li{counter-increment:s;padding-top:14px;border-top:2px solid var(--ink)}
+.steps li::before{content:counter(s);display:block;font-weight:700;font-size:2.4rem;line-height:1;color:var(--orange);margin-bottom:10px}
+.steps b{display:block;font-size:1.06rem;font-weight:600;margin-bottom:4px;line-height:1.45}
+.steps p{margin:0;color:var(--muted);font-size:.95rem}
+.pay{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:36px}
+.pay .l{color:var(--muted);margin-right:4px}
+.pay .p{border:1.5px solid var(--line);border-radius:10px;padding:5px 14px;font-weight:600;background:var(--ground)}
+
+/* share vs private + questions */
+.two{display:grid;gap:16px;margin-bottom:56px}
+.opt{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px 24px}
+.opt h3{margin:0 0 6px;font-size:1.35rem;font-weight:700;line-height:1.3}
+.opt p{margin:0;color:var(--muted)}
+.faq{max-width:760px}
+.faq details{border-top:1px solid var(--line)}
+.faq details:last-of-type{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:14px 0;font-weight:600;font-size:1.05rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.5rem;line-height:1;color:var(--muted);transition:transform .2s;flex:none}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin:0 0 18px;color:var(--muted);max-width:62ch}
+
+/* footer */
+footer{background:var(--hero);color:var(--hero-ink);padding-block:52px 40px}
+footer h2{margin:0 0 8px;font-size:1.6rem;font-weight:700;line-height:1.4}
+footer .lede{margin-bottom:22px}
+.contacts{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:36px}
+.fine{color:var(--hero-muted);font-size:.84rem;margin:0}
+
+/* mobile order bar */
+.bar{display:none}
+
+@media (max-width:719px){
+  .top .btn{display:none}
+  .brand{font-size:.98rem}
+  .bar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--paper);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px))}
+  .bar .btn{width:100%}
+  footer{padding-bottom:120px}
+}
+@media (min-width:760px){
+  .board{grid-template-columns:1fr 1fr}
+  .two{grid-template-columns:1fr 1fr;gap:24px}
+}
+@media (min-width:860px){
+  .steps{grid-template-columns:repeat(4,1fr);gap:28px}
+}
+@media (min-width:920px){
+  .hero-in{grid-template-columns:1.15fr .85fr;gap:56px;padding-block:76px 84px}
+}
+@media (min-width:1240px){
+  .board{grid-template-columns:1fr 1fr 1fr}
+}
+@media (prefers-reduced-motion: reduce){
+  .m{animation:none;opacity:1;transform:none}
+  .faq summary::after{transition:none}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gfp-g" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#EAA023"/><stop offset=".52" stop-color="#95BB26"/><stop offset="1" stop-color="#31A435"/>
+    </linearGradient>
+    <symbol id="gfp-mark" viewBox="0 0 40 40">
+      <rect width="40" height="40" rx="11" fill="#1E4A2A"/>
+      <path d="M9 29.5c6.5-1.5 11.5-6.5 16-15" stroke="url(#gfp-g)" stroke-width="4.6" fill="none" stroke-linecap="round"/>
+      <path d="M18.8 12.2 27.4 10.6 28.2 19.3" stroke="#31A435" stroke-width="4.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="send" viewBox="0 0 24 24">
+      <path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="wrap top">
+  <a class="brand" href="#top" aria-label="Going Forward Premium">
+    <svg aria-hidden="true"><use href="#gfp-mark"/></svg>
+    <span>Going Forward Premium</span>
+  </a>
+  <div class="top-right">
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-l="my" aria-pressed="true">မြန်မာ</button>
+      <button type="button" data-l="en" aria-pressed="false">EN</button>
+    </div>
+    <a class="btn btn-go" href="https://t.me/GoingForwardDigitalShopBot" target="_blank" rel="noopener">
+      <svg aria-hidden="true"><use href="#send"/></svg>
+      <span class="my">မှာယူမယ်</span><span class="en">Order</span>
+    </a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div>
+        <h1>
+          <span class="my">Premium App တွေ ဈေးချိုချိုနဲ့ မြန်မြန်ရ</span>
+          <span class="en">Premium apps at friendly prices, delivered fast</span>
+        </h1>
+        <p class="lede">
+          <span class="my">CapCut, ChatGPT, Canva, Netflix အပါအဝင် app ၂၀ မျိုးကျော်ကို Telegram bot ကနေ တိုက်ရိုက် မှာယူနိုင်ပါတယ်။ ငွေလွှဲ screenshot ပို့ပြီး admin စစ်ဆေးတာနဲ့ account ကို bot က ပို့ပေးပါတယ်။</span>
+          <span class="en">Order CapCut, ChatGPT, Canva, Netflix and 20+ other apps straight from our Telegram bot. Send your payment screenshot, and once an admin has checked it, the bot sends you the account.</span>
+        </p>
+        <div class="cta">
+          <a class="btn btn-go" href="https://t.me/GoingForwardDigitalShopBot" target="_blank" rel="noopener">
+            <svg aria-hidden="true"><use href="#send"/></svg>
+            <span class="my">Telegram bot မှာ မှာယူမယ်</span><span class="en">Order on Telegram</span>
+          </a>
+          <a class="btn btn-ghost" href="https://t.me/goingforward_premium" target="_blank" rel="noopener">
+            <span class="my">Channel ကို Join မယ်</span><span class="en">Join our channel</span>
+          </a>
+        </div>
+        <p class="paynote">
+          <span class="my">KBZPay, Wave Pay, AYA Pay တို့နဲ့ ပေးချေနိုင်ပါတယ်</span>
+          <span class="en">Pay with KBZPay, Wave Pay or AYA Pay</span>
+        </p>
+      </div>
+
+      <figure class="demo">
+        <div class="chat">
+          <div class="chat-head">
+            <svg aria-hidden="true"><use href="#gfp-mark"/></svg>
+            <div><b>Going Forward Premium</b><small>bot</small></div>
+          </div>
+          <div class="msgs">
+            <div class="m bot" style="--i:0">မင်္ဂလာပါ 🙏 ဘယ် app ယူချင်လဲ ရွေးပေးပါ
+              <div class="keys" aria-hidden="true"><span>CapCut Pro</span><span>Netflix</span><span>ChatGPT Plus</span><span>Canva Pro</span></div>
+            </div>
+            <div class="m me" style="--i:1">CapCut Pro</div>
+            <div class="m bot" style="--i:2">Account အမျိုးအစားနဲ့ ကြာချိန် ရွေးပါ
+              <div class="keys" aria-hidden="true"><span>Share 1 လ</span><span>Private 1 လ</span></div>
+            </div>
+            <div class="m me" style="--i:3">Private 1 လ</div>
+            <div class="m bot" style="--i:4">စုစုပေါင်း 25,000 Ks ပါ။ ငွေလွှဲပြီး screenshot ပို့ပေးပါ</div>
+            <div class="m me slip" style="--i:5">
+              <svg viewBox="0 0 30 38" aria-hidden="true"><rect x="1" y="1" width="28" height="36" rx="4" fill="var(--bot)" stroke="var(--chat-line)"/><rect x="6" y="7" width="12" height="3" rx="1.5" fill="var(--forest)"/><rect x="6" y="14" width="18" height="2" rx="1" fill="var(--chat-line)"/><rect x="6" y="19" width="15" height="2" rx="1" fill="var(--chat-line)"/><rect x="6" y="27" width="10" height="4" rx="2" fill="var(--orange)"/></svg>
+              <span>Payment screenshot</span>
+            </div>
+            <div class="m bot" style="--i:6">✅ ငွေရရှိကြောင်း စစ်ဆေးပြီးပါပြီ။ Account အသေးစိတ်ကို ပို့ပေးလိုက်ပါပြီ</div>
+          </div>
+        </div>
+        <figcaption>
+          <span class="my">Bot မှာ မှာယူရတာ ဒီလိုပါပဲ</span>
+          <span class="en">This is what ordering in the bot looks like</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="block" id="prices" aria-labelledby="prices-h">
+    <div class="wrap">
+      <h2 id="prices-h"><span class="my">ဈေးနှုန်းစာရင်း</span><span class="en">Price list</span></h2>
+      <p class="sub">
+        <span class="my">ဈေးနှုန်းတွေကို ကျွန်တော်တို့ရဲ့ စာရင်းထဲကနေ တိုက်ရိုက်ပြသထားပါတယ်။ နောက်ဆုံးဈေးကို bot မှာလည်း ကြည့်နိုင်ပါတယ်။</span>
+        <span class="en">These prices come straight from our live price book. The bot always shows the latest price too.</span>
+      </p>
+      <div class="filters" id="filters" role="group" aria-label="Filter by type"></div>
+      <div class="board" id="board" aria-live="polite"></div>
+      <p class="state" id="state"><span class="my">ဈေးနှုန်းများ ဖွင့်နေပါသည်…</span><span class="en">Loading prices…</span></p>
+      <div class="after">
+        <a class="btn btn-go" href="https://t.me/GoingForwardDigitalShopBot" target="_blank" rel="noopener">
+          <svg aria-hidden="true"><use href="#send"/></svg>
+          <span class="my">Telegram bot မှာ မှာယူမယ်</span><span class="en">Order on Telegram</span>
+        </a>
+        <p>
+          <span class="my">စာရင်းထဲ မပါတဲ့ app လိုချင်ရင် channel မှာ မေးမြန်းနိုင်ပါတယ်။</span>
+          <span class="en">Looking for an app that isn't listed? Ask us on the channel.</span>
+        </p>
+      </div>
+      <p class="stamp" id="stamp"></p>
+    </div>
+  </section>
+
+  <section class="block band" id="how" aria-labelledby="how-h">
+    <div class="wrap">
+      <h2 id="how-h"><span class="my">မှာယူနည်း</span><span class="en">How to order</span></h2>
+      <p class="sub">
+        <span class="my">အဆင့် ၄ ဆင့်ပဲ ရှိပါတယ်။ အားလုံး Telegram bot ထဲမှာပဲ ပြီးပါတယ်။</span>
+        <span class="en">Four steps, all inside the Telegram bot.</span>
+      </p>
+      <ol class="steps">
+        <li>
+          <b><span class="my">Bot ကိုဖွင့်ပြီး app ရွေးပါ</span><span class="en">Open the bot and pick an app</span></b>
+          <p><span class="my">/start နှိပ်လိုက်တာနဲ့ ရနိုင်တဲ့ app တွေကို ပြပေးပါမယ်။</span><span class="en">Tap /start and the bot lists every app you can buy.</span></p>
+        </li>
+        <li>
+          <b><span class="my">Share ဒါမှမဟုတ် Private နဲ့ ကြာချိန် ရွေးပါ</span><span class="en">Choose Share or Private and how long</span></b>
+          <p><span class="my">Bot က စုစုပေါင်း ကျသင့်ငွေကို ပြပေးပါမယ်။</span><span class="en">The bot shows you the total before you pay.</span></p>
+        </li>
+        <li>
+          <b><span class="my">ငွေလွှဲပြီး screenshot ပို့ပါ</span><span class="en">Pay and send the screenshot</span></b>
+          <p><span class="my">KBZPay, Wave Pay ဒါမှမဟုတ် AYA Pay နဲ့ လွှဲနိုင်ပါတယ်။</span><span class="en">Use KBZPay, Wave Pay or AYA Pay.</span></p>
+        </li>
+        <li>
+          <b><span class="my">Account ကို bot က ပို့ပေးပါမယ်</span><span class="en">Get your account from the bot</span></b>
+          <p><span class="my">Admin က ငွေလွှဲမှုကို စစ်ဆေးပြီးတာနဲ့ account အသေးစိတ်ကို ချက်ချင်း ပို့ပေးပါတယ်။</span><span class="en">As soon as an admin has checked your payment, the bot sends your account details.</span></p>
+        </li>
+      </ol>
+      <div class="pay">
+        <span class="l"><span class="my">ငွေပေးချေနိုင်သည့် နည်းလမ်းများ</span><span class="en">Ways to pay</span></span>
+        <span class="p">KBZPay</span><span class="p">Wave Pay</span><span class="p">AYA Pay</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="faq" aria-labelledby="sp-h">
+    <div class="wrap">
+      <h2 id="sp-h"><span class="my">Share နဲ့ Private ဘာကွာလဲ</span><span class="en">Share or Private?</span></h2>
+      <p class="sub">
+        <span class="my">App တချို့မှာ account အမျိုးအစား ၂ မျိုး ရွေးလို့ရပါတယ်။</span>
+        <span class="en">Some apps come in two kinds of account.</span>
+      </p>
+      <div class="two">
+        <div class="opt">
+          <h3>Share</h3>
+          <p><span class="my">Account တစ်ခုတည်းကို အခြားသူတွေနဲ့ မျှသုံးရတာပါ။ ဈေးအသက်သာဆုံး ရွေးချယ်မှုပါ။</span><span class="en">You share one account with other customers. It's the cheapest option.</span></p>
+        </div>
+        <div class="opt">
+          <h3>Private</h3>
+          <p><span class="my">သင့်အတွက် သီးသန့် account ပါ။ သင်တစ်ယောက်တည်းပဲ သုံးရပါမယ်။</span><span class="en">An account that's yours alone. Nobody else uses it.</span></p>
+        </div>
+      </div>
+
+      <h2><span class="my">မေးလေ့ရှိတဲ့ မေးခွန်းများ</span><span class="en">Questions</span></h2>
+      <div class="faq">
+        <details>
+          <summary><span class="my">Account ရဖို့ ဘယ်လောက်ကြာလဲ</span><span class="en">How long until I get my account?</span></summary>
+          <p><span class="my">Admin က သင့်ငွေလွှဲ screenshot ကို စစ်ဆေးပြီးတာနဲ့ bot က ချက်ချင်း ပို့ပေးပါတယ်။</span><span class="en">The bot sends it as soon as an admin has checked your payment screenshot.</span></p>
+        </details>
+        <details>
+          <summary><span class="my">Canva နဲ့ Zoom အတွက် Gmail ဘာလို့ လိုတာလဲ</span><span class="en">Why do Canva and Zoom need my Gmail?</span></summary>
+          <p><span class="my">ဒီ app တွေကို သင့်ကိုယ်ပိုင် Gmail ပေါ်မှာ ဖွင့်ပေးရလို့ပါ။ မှာယူနေစဉ် bot က Gmail ကို မေးပါလိမ့်မယ်။</span><span class="en">These are activated on your own Gmail account, so the bot asks for it during your order.</span></p>
+        </details>
+        <details>
+          <summary><span class="my">ဘယ်လို ငွေပေးချေလို့ရလဲ</span><span class="en">How can I pay?</span></summary>
+          <p><span class="my">KBZPay, Wave Pay နဲ့ AYA Pay လက်ခံပါတယ်။ ငွေလွှဲရမယ့် အချက်အလက်ကို bot က ပြပေးပါမယ်။</span><span class="en">We accept KBZPay, Wave Pay and AYA Pay. The bot shows you where to send the money.</span></p>
+        </details>
+        <details>
+          <summary><span class="my">Account မှာ ပြဿနာရှိရင် ဘာလုပ်ရမလဲ</span><span class="en">What if my account has a problem?</span></summary>
+          <p><span class="my">Order အသေးစိတ်နဲ့အတူ Telegram ကနေ ဆက်သွယ်ပါ။ ကျွန်တော်တို့ team က ကူညီပေးပါမယ်။</span><span class="en">Message us on Telegram with your order details and our team will help.</span></p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <h2><span class="my">မေးစရာ ရှိပါသလား</span><span class="en">Got a question?</span></h2>
+    <p class="lede">
+      <span class="my">Telegram ကနေ အချိန်မရွေး ဆက်သွယ်နိုင်ပါတယ်။</span>
+      <span class="en">Reach us any time on Telegram.</span>
+    </p>
+    <div class="contacts">
+      <a class="btn btn-go" href="https://t.me/GoingForwardDigitalShopBot" target="_blank" rel="noopener">
+        <svg aria-hidden="true"><use href="#send"/></svg>@GoingForwardDigitalShopBot
+      </a>
+      <a class="btn btn-ghost" href="https://t.me/goingforward_premium" target="_blank" rel="noopener">t.me/goingforward_premium</a>
+    </div>
+    <p class="fine">
+      &copy; 2026 Going Forward Premium.
+      <span class="my">App အမည်များသည် သက်ဆိုင်ရာ ကုမ္ပဏီများ၏ ပိုင်ဆိုင်မှု ဖြစ်ပါသည်။</span>
+      <span class="en">App names belong to their respective owners.</span>
+    </p>
+  </div>
+</footer>
+
+<div class="bar">
+  <a class="btn btn-go" href="https://t.me/GoingForwardDigitalShopBot" target="_blank" rel="noopener">
+    <svg aria-hidden="true"><use href="#send"/></svg>
+    <span class="my">Telegram bot မှာ မှာယူမယ်</span><span class="en">Order on Telegram</span>
+  </a>
+</div>
+
+<script>
+/* ────────────────────────────────────────────────────────────────────────────
+   WHERE THE PRICES COME FROM
+
+   This page reads the "Products" tab of the same Google Sheet the Telegram bot
+   reads. Edit a price in the sheet and this page follows it, usually within
+   about 5 minutes (Google caches the published file for a few minutes).
+
+   Only the Products tab is published. Inventory and Orders are never exposed.
+
+   If Google is unreachable, the page falls back to the built-in snapshot below
+   so a customer never lands on an empty price list.
+   ──────────────────────────────────────────────────────────────────────────── */
+
+var CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ5odDFZjJuTWox4sHDK20lumu4z27alcnEWevV0cZLd7pP4TkqMO0SjBf9JyL-oaGNdXVNGa7Gpzzj/pub?gid=669362890&single=true&output=csv";
+
+/* Burmese names for the sheet's Category values. A category that isn't listed
+   here simply shows its English name — nothing breaks when you add one. */
+var CAT_MY = {
+  "ai tools": "AI",
+  "creative & design": "ဒီဇိုင်း နဲ့ Video",
+  "entertainment": "ရုပ်ရှင် နဲ့ သီချင်း",
+  "community": "အလုပ် နဲ့ Chat",
+  "learning tools": "သင်ယူမှု",
+  "vpn": "VPN"
+};
+
+/* Logo file for each product name. The sheet's Logo column is used first; this
+   map covers the rows where that column is empty. */
+var LOGO_BY_NAME = {
+  "capcut pro": "capcut.png",
+  "netflix": "netflix.jpg",
+  "amazon prime": "amazon-prime.png",
+  "youtube premium": "youtube-premium.jpeg",
+  "happ vpn": "happ.png",
+  "gemini": "gemini.jpeg",
+  "canva": "canva.jpeg",
+  "spotify": "spotify.jpeg",
+  "telegram premium": "telegram.jpeg",
+  "chatgpt plus": "chatgpt.png",
+  "chatgpt go": "chatgpt.png",
+  "elsa speak pro": "elsa-speak-pro.jpeg",
+  "quillbot premium": "quillbot.jpeg",
+  "claude ai": "claude.png",
+  "meitu (svip)": "meitu.jpeg",
+  "zoom pro": "zoom.png",
+  "zoom private": "zoom.png",
+  "perplexity pro": "perplexity.png",
+  "super grok": "super-grok.png",
+  "duolingo super": "duolingo-super.jpeg",
+  "wink": "wink.png",
+  "alight motion": "alight-motion.png",
+  "jump jump": "jump-jump.jpg",
+  "express vpn": "express.png",
+  "windscribe": "windscribe.jpeg",
+  "outline vpn": "outline.jpeg"
+};
+
+/* Snapshot of the price book, used only if the live read fails.
+   [ product, variant, price, promo price (0 = none), category ] */
+var FALLBACK = [
+["Capcut Pro","Share Acc (1Month)",15000,12000,"Creative & Design"],
+["Capcut Pro","Private Acc(1Month)",25000,0,"Creative & Design"],
+["Capcut Pro","Share Acc (6Month)",55000,0,"Creative & Design"],
+["Capcut Pro","Private Acc (6Month)",95000,0,"Creative & Design"],
+["Capcut Pro","Own Acc(6Month)",110000,0,"Creative & Design"],
+["Netflix","Share Acc(1Month)",12000,0,"Entertainment"],
+["Netflix","Private Acc(1Month)",22000,0,"Entertainment"],
+["Amazon Prime","Private(3Month)",35000,0,"Entertainment"],
+["Amazon Prime","Private(6Month)",45000,0,"Entertainment"],
+["YouTube Premium","Private Acc(1Month)",15000,0,"Entertainment"],
+["YouTube Premium","Own Mail - 3 Month",45000,0,"Entertainment"],
+["Spotify","Private - Family - 3M",23000,0,"Entertainment"],
+["Spotify","Private - Family - 6M",37000,0,"Entertainment"],
+["Spotify","Private - Family - 1Y",65000,0,"Entertainment"],
+["Happ VPN","50Gb",4500,0,"VPN"],
+["Happ VPN","150Gb",8000,0,"VPN"],
+["Happ VPN","200Gb",10000,0,"VPN"],
+["Jump Jump","Share(1Month)",13500,0,"VPN"],
+["Jump Jump","Private(1Month)",25000,0,"VPN"],
+["Jump Jump","Own mail (1Month)",28000,0,"VPN"],
+["Gemini","1M Warranty",25000,0,"AI Tools"],
+["Gemini","3M Warranty",38000,0,"AI Tools"],
+["Gemini","10M Warranty",55000,0,"AI Tools"],
+["ChatGPT Plus","Share Acc(1 Month)",35000,0,"AI Tools"],
+["ChatGPT Plus","Own Email(1 Month)",110000,0,"AI Tools"],
+["ChatGPT Go","Own Mail (1Month)",45000,0,"AI Tools"],
+["Claude AI","Own Email(1 Month)",110000,0,"AI Tools"],
+["Perplexity Pro","Own Mail (1Month)",55000,0,"AI Tools"],
+["Super Grok","Own Mail (1Month)",130000,0,"AI Tools"],
+["Canva","Canva Pro(1Year)",7500,0,"Creative & Design"],
+["Canva","Canva Business(1Month)",17000,0,"Creative & Design"],
+["Meitu (SVIP)","Share Acc(1 Month)",13500,0,"Creative & Design"],
+["Wink","Share Acc(1Month)",9500,0,"Creative & Design"],
+["Wink","Private Acc(1Month)",25000,0,"Creative & Design"],
+["Alight Motion","Own Acc (1Year)",8500,0,"Creative & Design"],
+["Telegram Premium","Private Acc(1 Month)",27500,0,"Community"],
+["Telegram Premium","Own Acc(3Month)",53000,0,"Community"],
+["Telegram Premium","Own Acc(6Month)",75000,0,"Community"],
+["Telegram Premium","Own Acc(1Year)",145000,0,"Community"],
+["Zoom Pro","Choice1",20000,0,"Community"],
+["Zoom Pro","Choice2",25000,0,"Community"],
+["Zoom Pro","300P (1 Month)",65000,0,"Community"],
+["Zoom Pro","500P (1 Month)",110000,0,"Community"],
+["Zoom Private","Private - 14 days",8500,0,"Community"],
+["Zoom Private","Private - 3 Month",55000,0,"Community"],
+["Quillbot Premium","Share Acc(1 Month)",9500,0,"Learning Tools"],
+["Quillbot Premium","Own Acc(1 Month)",20000,0,"Learning Tools"],
+["Elsa Speak Pro","1 Year",45000,0,"Learning Tools"],
+["Duolingo Super","Own Acc(1Year)",55000,25000,"Learning Tools"]
+];
+
+/* ─── helpers ─────────────────────────────────────────────────────────────── */
+function t(my, en){ return '<span class="my">' + my + '</span><span class="en">' + en + '</span>'; }
+function esc(s){ return String(s == null ? "" : s).replace(/[&<>"]/g, function(c){
+  return { "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;" }[c];
+}); }
+function ks(n){ return Number(n).toLocaleString("en-US") + " Ks"; }
+function num(v){ var n = parseFloat(String(v == null ? "" : v).replace(/[^0-9.]/g, "")); return isFinite(n) ? n : 0; }
+function key(s){ return String(s == null ? "" : s).toLowerCase().replace(/\s+/g, " ").trim(); }
+
+/** CSV parser that copes with quoted fields, embedded commas and newlines. */
+function parseCSV(text){
+  var rows = [], row = [], field = "", q = false, i, c;
+  text = String(text).replace(/\r\n/g, "\n").replace(/\r/g, "\n");
+  for (i = 0; i < text.length; i++){
+    c = text[i];
+    if (q){
+      if (c === '"'){ if (text[i+1] === '"'){ field += '"'; i++; } else { q = false; } }
+      else field += c;
+    } else if (c === '"'){ q = true; }
+    else if (c === ","){ row.push(field); field = ""; }
+    else if (c === "\n"){ row.push(field); rows.push(row); row = []; field = ""; }
+    else field += c;
+  }
+  if (field.length || row.length){ row.push(field); rows.push(row); }
+  return rows.filter(function(r){ return r.some(function(x){ return String(x).trim() !== ""; }); });
+}
+
+/** Find a column by header name — same forgiving match the bot uses, so the
+ *  sheet's columns can be reordered without touching this page. */
+function finder(headers){
+  var h = headers.map(function(x){ return key(x); });
+  return function(){
+    var cands = [].slice.call(arguments), j, i;
+    for (j = 0; j < cands.length; j++){ i = h.indexOf(cands[j]); if (i !== -1) return i; }
+    for (j = 0; j < cands.length; j++){
+      for (i = 0; i < h.length; i++){ if (h[i].indexOf(cands[j]) !== -1) return i; }
+    }
+    return -1;
+  };
+}
+
+function rowsFromCSV(text){
+  var table = parseCSV(text);
+  if (table.length < 2) return [];
+  var find = finder(table[0]);
+  var iName = find("product name", "name"),
+      iVar  = find("variant"),
+      iPrice= find("price"),
+      iPromo= find("promo"),
+      iPP   = find("promo price"),
+      iCat  = find("category"),
+      iLogo = find("logo"),
+      iAct  = find("active");
+  if (iName === -1 || iPrice === -1) return [];
+  var g = function(r, i){ return i > -1 ? (r[i] == null ? "" : String(r[i])) : ""; };
+  return table.slice(1).map(function(r){
+    return {
+      name:  g(r, iName).trim(),
+      variant: g(r, iVar).trim(),
+      price: num(g(r, iPrice)),
+      promo: key(g(r, iPromo)) === "yes",
+      promoPrice: num(g(r, iPP)),
+      cat:   g(r, iCat).trim(),
+      logo:  g(r, iLogo).trim(),
+      active: g(r, iAct).trim()
+    };
+  }).filter(function(p){
+    return p.name && p.price > 0 && key(p.active) !== "no";
+  });
+}
+
+function rowsFromFallback(){
+  return FALLBACK.map(function(a){
+    return { name:a[0], variant:a[1], price:a[2], promo:a[3] > 0, promoPrice:a[3], cat:a[4], logo:"", active:"" };
+  });
+}
+
+/** One card per product name, keeping the sheet's own order. */
+function group(rows){
+  var order = [], map = {};
+  rows.forEach(function(r){
+    if (!map[r.name]){ map[r.name] = { name:r.name, cat:r.cat, logo:"", plans:[] }; order.push(r.name); }
+    var it = map[r.name];
+    if (!it.cat && r.cat) it.cat = r.cat;
+    if (!it.logo && r.logo) it.logo = r.logo;
+    it.plans.push(r);
+  });
+  return order.map(function(n){ return map[n]; });
+}
+
+function logoFor(item){
+  var byName = LOGO_BY_NAME[key(item.name)];
+  if (byName) return byName;
+  if (item.logo && /\.(png|jpe?g|webp|svg)$/i.test(item.logo)) {
+    return item.logo.toLowerCase().replace(/\s+/g, "-");
+  }
+  return "";
+}
+
+/* ─── render ──────────────────────────────────────────────────────────────── */
+var ITEMS = [], current = "all";
+var board = document.getElementById("board");
+var filters = document.getElementById("filters");
+var stateEl = document.getElementById("state");
+var stampEl = document.getElementById("stamp");
+
+function renderFilters(){
+  var seen = {}, list = [["all", "အားလုံး", "All"]];
+  ITEMS.forEach(function(it){
+    var k = key(it.cat);
+    if (!k || seen[k]) return;
+    seen[k] = 1;
+    list.push([k, CAT_MY[k] || it.cat, it.cat]);
+  });
+  filters.innerHTML = list.map(function(f){
+    return '<button type="button" data-c="' + esc(f[0]) + '" aria-pressed="' + (f[0] === current) + '">' + t(esc(f[1]), esc(f[2])) + '</button>';
+  }).join("");
+}
+
+function renderBoard(){
+  var shown = ITEMS.filter(function(it){ return current === "all" || key(it.cat) === current; });
+  board.innerHTML = shown.map(function(it){
+    var file = logoFor(it);
+    var mark = file
+      ? '<img class="item-logo" src="logos/' + esc(file) + '" alt="" loading="lazy" decoding="async">'
+      : '<span class="item-logo letter" aria-hidden="true">' + esc(it.name.charAt(0).toUpperCase()) + '</span>';
+    var rows = it.plans.map(function(p){
+      var on = p.promo && p.promoPrice > 0 && p.promoPrice < p.price;
+      var price = on
+        ? '<span class="was">' + Number(p.price).toLocaleString("en-US") + '</span>' + ks(p.promoPrice)
+        : ks(p.price);
+      var label = esc(p.variant || "—") +
+        (on ? '<span class="promo-chip">' + t("လျှော့ဈေး", "PROMO") + '</span>' : '');
+      return '<tr><td class="ty">' + label + '</td><td class="pr">' + price + '</td></tr>';
+    }).join("");
+    return '<article class="item"><div class="item-h">' + mark +
+      '<div class="item-t"><h3>' + esc(it.name) + '</h3><span class="cat">' +
+      t(esc(CAT_MY[key(it.cat)] || it.cat), esc(it.cat)) + '</span></div></div>' +
+      '<table class="plans"><tbody>' + rows + '</tbody></table></article>';
+  }).join("");
+
+  /* a missing logo file falls back to the product's first letter */
+  Array.prototype.forEach.call(board.querySelectorAll("img.item-logo"), function(img){
+    img.addEventListener("error", function(){
+      var span = document.createElement("span");
+      span.className = "item-logo letter";
+      span.setAttribute("aria-hidden", "true");
+      var h3 = img.parentNode.querySelector("h3");
+      span.textContent = h3 ? h3.textContent.charAt(0).toUpperCase() : "•";
+      img.parentNode.replaceChild(span, img);
+    });
+  });
+}
+
+filters.addEventListener("click", function(e){
+  var b = e.target.closest("button");
+  if (!b) return;
+  current = b.getAttribute("data-c");
+  Array.prototype.forEach.call(filters.querySelectorAll("button"), function(x){
+    x.setAttribute("aria-pressed", String(x === b));
+  });
+  renderBoard();
+});
+
+function show(rows, live){
+  ITEMS = group(rows);
+  stateEl.style.display = ITEMS.length ? "none" : "";
+  renderFilters();
+  renderBoard();
+  var now = new Date();
+  var time = now.toLocaleString("en-GB", { day:"numeric", month:"short", hour:"2-digit", minute:"2-digit" });
+  stampEl.innerHTML = live
+    ? t("ဈေးနှုန်းများကို " + time + " မှာ update လုပ်ထားပါတယ်", "Prices updated " + time)
+    : t("ဈေးနှုန်းများကို ချိတ်ဆက်၍မရသဖြင့် သိမ်းထားသော စာရင်းကို ပြထားပါသည်။ နောက်ဆုံးဈေးကို bot မှာ စစ်ပါ။",
+        "We couldn't reach the live price book, so this is our saved list. Check the bot for the latest price.");
+}
+
+function load(){
+  /* 5-minute bucket: repeat visitors reuse the cached file, and a price change
+     can never be stuck in a browser cache for hours. */
+  var url = CSV_URL + "&_=" + Math.floor(Date.now() / 300000);
+  var done = false;
+  var giveUp = setTimeout(function(){ if (!done){ done = true; show(rowsFromFallback(), false); } }, 9000);
+
+  fetch(url, { cache: "no-store" })
+    .then(function(r){ if (!r.ok) throw new Error("HTTP " + r.status); return r.text(); })
+    .then(function(text){
+      if (done) return;
+      var rows = rowsFromCSV(text);
+      if (!rows.length) throw new Error("no rows");
+      done = true; clearTimeout(giveUp);
+      show(rows, true);
+    })
+    .catch(function(){
+      if (done) return;
+      done = true; clearTimeout(giveUp);
+      show(rowsFromFallback(), false);
+    });
+}
+
+/* ─── language ────────────────────────────────────────────────────────────── */
+var root = document.documentElement;
+function setLang(l){
+  root.setAttribute("data-lang", l);
+  root.lang = l;
+  Array.prototype.forEach.call(document.querySelectorAll(".lang button"), function(b){
+    b.setAttribute("aria-pressed", String(b.getAttribute("data-l") === l));
+  });
+  try { localStorage.setItem("gfp-lang", l); } catch (e) {}
+}
+document.querySelector(".lang").addEventListener("click", function(e){
+  var b = e.target.closest("button");
+  if (b) setLang(b.getAttribute("data-l"));
+});
+var saved = null;
+try { saved = localStorage.getItem("gfp-lang"); } catch (e) {}
+setLang(saved === "en" ? "en" : "my");
+
+load();
+</script>
+</body>
+</html>
