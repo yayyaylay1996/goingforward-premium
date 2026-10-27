@@ -88,6 +88,7 @@ html[data-lang="my"] .hero h1{font-size:clamp(1.8rem,4.3vw,2.8rem);line-height:1
 .lede{font-size:1.1rem;color:var(--hero-muted);max-width:50ch;margin:0 0 28px}
 .cta{display:flex;flex-wrap:wrap;gap:12px}
 .paynote{margin:20px 0 0;font-size:.92rem;color:var(--hero-muted)}
+.paynote a{color:var(--hero-ink);text-decoration:underline;text-underline-offset:3px}
 
 /* the bot conversation */
 figure.demo{margin:0;width:100%;max-width:400px;justify-self:center}
@@ -251,6 +252,9 @@ footer .lede{margin-bottom:22px}
         <p class="paynote">
           <span class="my">KBZPay, Wave Pay, AYA Pay တို့နဲ့ ပေးချေနိုင်ပါတယ်</span>
           <span class="en">Pay with KBZPay, Wave Pay or AYA Pay</span>
+          <br>
+          <span class="my">⭐ ဝယ်တိုင်း Points ရမယ် — Points နဲ့ ပြန်ဝယ်လို့ရတယ် · <a href="#points">အသေးစိတ်</a></span>
+          <span class="en">⭐ Earn Points on every order and spend them on your next one · <a href="#points">Details</a></span>
         </p>
       </div>
 
@@ -341,6 +345,34 @@ footer .lede{margin-bottom:22px}
     </div>
   </section>
 
+  <section class="block" id="points" aria-labelledby="points-h">
+    <div class="wrap">
+      <h2 id="points-h"><span class="my">⭐ Points နဲ့ ပြန်ဝယ်နိုင်ပါတယ်</span><span class="en">⭐ Earn Points, spend them on your next order</span></h2>
+      <p class="sub">
+        <span class="my">Telegram bot မှာ ဝယ်တိုင်း Points ရပါတယ်။ ရလာတဲ့ Points နဲ့ နောက်ထပ်ဝယ်တဲ့အခါ ဈေးကို လျှော့ပေးလို့ ရပါတယ်။ ၁ Point = ၁ Ks ပါ။</span>
+        <span class="en">Every order in the Telegram bot earns Points, and Points take money off your next order. 1 Point = 1 Ks.</span>
+      </p>
+      <ol class="steps">
+        <li>
+          <b><span class="my">ဝယ်ရင် Points ရမယ်</span><span class="en">Buy and earn</span></b>
+          <p><span class="my">App တစ်ခုချင်းစီမှာ ရမယ့် Points ကို bot ထဲက product card မှာ ကြိုမြင်ရပါတယ်။ ဝယ်ပြီးတာနဲ့ ထည့်ပေးပါတယ်။</span><span class="en">Each app's product card in the bot shows how many Points it earns. They are added as soon as your order is done.</span></p>
+        </li>
+        <li>
+          <b><span class="my">နောက်ဝယ်ရင် Points သုံးမယ်</span><span class="en">Spend on your next order</span></b>
+          <p><span class="my">Checkout မှာ <b>Pay with Points</b> ကို နှိပ်ပါ။ App တိုင်းကို Points နဲ့ ဝယ်လို့ရပါတယ်။</span><span class="en">Tap <b>Pay with Points</b> at checkout. You can use Points on any app.</span></p>
+        </li>
+        <li>
+          <b><span class="my">တစ်စိတ်တစ်ပိုင်းလည်း ရတယ်</span><span class="en">Part Points, part cash</span></b>
+          <p><span class="my">Points မလောက်သေးရင် ရှိသလောက်သုံးပြီး ကျန်ငွေကို Wallet ဒါမှမဟုတ် ငွေလွှဲနဲ့ ပေးလို့ရပါတယ်။</span><span class="en">Not enough Points for the full price? Use what you have and pay the rest from your Wallet or by transfer.</span></p>
+        </li>
+        <li>
+          <b><span class="my">Points သက်တမ်း ၆ လ</span><span class="en">Points last 6 months</span></b>
+          <p><span class="my">ရတဲ့နေ့ကစပြီး ၆ လအတွင်း သုံးပါ။ ကုန်ဖို့ ၃ ရက်အလို bot က သတိပေးပါမယ်။</span><span class="en">Use them within 6 months of earning. The bot reminds you 3 days before they run out.</span></p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
   <section class="block" id="faq" aria-labelledby="sp-h">
     <div class="wrap">
       <h2 id="sp-h"><span class="my">Share နဲ့ Private ဘာကွာလဲ</span><span class="en">Share or Private?</span></h2>
@@ -361,6 +393,10 @@ footer .lede{margin-bottom:22px}
 
       <h2><span class="my">မေးလေ့ရှိတဲ့ မေးခွန်းများ</span><span class="en">Questions</span></h2>
       <div class="faq">
+        <details>
+          <summary><span class="my">Points ကို ဘယ်လိုရပြီး ဘယ်လိုသုံးလဲ</span><span class="en">How do Points work?</span></summary>
+          <p><span class="my">ဝယ်တိုင်း Points ရပါတယ်၊ ၁ Point = ၁ Ks ပါ။ Checkout မှာ Points နဲ့ အပြည့်ဖြစ်စေ တစ်စိတ်တစ်ပိုင်းဖြစ်စေ ပေးလို့ရပါတယ်။ Points က ရတဲ့နေ့ကစပြီး ၆ လအထိ သုံးလို့ရပါတယ်။ Points နဲ့ပဲ အပြည့်ဝယ်ရင်တော့ Points အသစ် မရပါဘူး။</span><span class="en">You earn Points on every order, and 1 Point = 1 Ks. At checkout you can pay all or part of the price with Points. They last 6 months from the day you earn them. An order paid entirely with Points does not earn new Points.</span></p>
+        </details>
         <details>
           <summary><span class="my">Account ရဖို့ ဘယ်လောက်ကြာလဲ</span><span class="en">How long until I get my account?</span></summary>
           <p><span class="my">Admin က သင့်ငွေလွှဲ screenshot ကို စစ်ဆေးပြီးတာနဲ့ bot က ချက်ချင်း ပို့ပေးပါတယ်။</span><span class="en">The bot sends it as soon as an admin has checked your payment screenshot.</span></p>
@@ -618,7 +654,11 @@ function logoFor(item){
   if (item.logo && /\.(png|jpe?g|webp|svg)$/i.test(item.logo)) {
     return item.logo.toLowerCase().replace(/\s+/g, "-");
   }
-  return "";
+  /* New product with no Logo cell and no entry above: try logos/<first word>.png
+     (e.g. "Coursera Premium" -> coursera.png). A missing file just shows the
+     first-letter badge, so this can never break the page. */
+  var first = key(item.name).replace(/\(.*?\)/g, "").trim().split(/[^a-z0-9]+/)[0];
+  return first ? first + ".png" : "";
 }
 
 /* ─── render ──────────────────────────────────────────────────────────────── */
